@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* 헤더시작 */
+header{
+  width: 100%;
+  height: 52px;
+}
+header>.nav{
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box;
+  z-index: 1500;
+  background-color: #fff;
+}
+
+/* 헤더-로고 */
+header>.nav>.logo{
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  width: 57px;
+}
+header>.nav>.logo>a{
+  display: block;
+  height: 20px;
+  text-indent: -9999px;
+  background-image: url(../img/logo160629.png);
+  background-position: center center;
+  background-size: cover;
+  
+}
+/* 헤더-로고 끝 */
+
+/* 헤더-햄버거버튼 */
+header>.nav>.mnu{
+  position: absolute;
+
+  right: 8px;
+  top: 5px;
+  width: 42px;
+  height: 36px;
+  /* margin: 5px 8px; */
+}
+header>.nav>.mnu>a{
+  display: block;
+  width: 42px;
+  height: 36px;
+  text-indent: -9999px;
+  background-image: url(../img/spriteSP191016.png);
+  background-position: -201px 0;
+  background-repeat: no-repeat;
+}
+header>.nav>.mnu.on>a{
+  background-position: -158px 0;
+  background-repeat: no-repeat;
+}
+/* @media screen and (max-width:768px){
+  header>.nav>.mnu.on>a{
+    position: absolute;
+    right:42px;
+  }
+} */
+/* 헤더-햄버거버튼 끝 */
+
+/* 헤더-햄버거버튼 클릭시 나오는 메뉴 */
+header>aside{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+header>aside>.sub{
+  width: 100%;
+}
+header>aside>.sub>.s_mnu{
+  width: 100%;
+}
+header>aside>.sub>.s_mnu>li{
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+header>aside>.sub>.s_mnu>li>a{
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-indent: 65px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 50px;
+}
+header>aside>.sub>.s_mnu>li>a::after{
+  display: block;
+  position: absolute;
+  background-image: url(../img/spriteSP191016.png);
+  content: '';
+}
+header>aside>.sub>.s_mnu>.home>a:after{
+  left: 10px;
+  top: 5px;
+  width: 41px;
+  height: 40px;
+  background-position: -674px -34px;
+}
+header>aside>.sub>.s_mnu>.down>a:after{
+  left: 14px;
+  top: 55px;
+  width: 31px;
+  height: 38px;
+  background-position: -502px -29px;
+}
+header>aside>.sub>.s_mnu>.family>a:after{
+  left: 13px;
+  top: 108px;
+  width: 31px;
+  height: 31px;
+  background-position: -328px -35px;
+}
+header>aside>.sub>.s_mnu>.game>a:after{
+  left: 10px;
+  top: 161px;
+  width: 42px;
+  height: 25px;
+  background-position: -586px -38px;
+}
+header>aside>.sub>.s_mnu>.store>a:after{
+  left: 10px;
+  top: 207px;
+  width: 41px;
+  height: 40px;
+  background-position: -674px -34px;
+}
+/* 헤더-햄버거버튼 메뉴 끝 */
+
+/* 헤더 끝 */
+
+
+/* 섹션 시작 */
+
+
+section{
+  width: 100%;
+  height: 100%;
+}
+
+/* 섹션-슬라이드 */
+section>.slide{
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+section>.slide>.slide-container{}
+section>.slide>.slide-container>.slides{}
+section>.slide>.slide-container>.slides>li{
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+}
+section>.slide>.slide-container>.slides>li>h2{
+  width: 100%;
+  height: 600px;
+  text-indent: -9999px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section>.slide>.slide-container>.slides>li.on>h2{
+  display: block;
+}
+section>.slide>.slide-container>.slides>.slide1>h2{
+  display: none;
+  background-image: url(../img/SPKorean0906.png);
+}
+section>.slide>.slide-container>.slides>.slide2>h2{
+  display: none;
+  background-image: url(../img/SP_Game_rangers_ko_12333.png);
+}
+section>.slide>.slide-container>.slides>.slide3>h2{
+  display: none;
+  background-image: url(../img/SP_LINE_Store_ko.png);
+}
+section>.slide>.slide-container>.slides>.slide4>h2{
+  display: none;
+  background-image: url(../img/SP_Game_Play_kr_123123.png);
+}
+
+section>.slide>.slide-container>.indicator{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  margin-left: -41px;
+}
+section>.slide>.slide-container>.indicator>li{
+  float: left;
+  margin-right: 20px;
+}
+section>.slide>.slide-container>.indicator>li:last-child{
+  margin-right: 0;
+}
+section>.slide>.slide-container>.indicator>li>a{
+  display: block;
+  width: 21px;
+  height: 23px;
+  text-indent: -9999px;
+  background-image: url(../img/indi.png);
+  background-position: -40px 0;
+}
+section>.slide>.slide-container>.indicator>li.on>a{
+  background-position: -40px -27px;
+}
+
+/* 섹션-슬라이드끝 */
+
+/* 섹션-다운로드 */
+section>.download{
+  width: 100%;
+}
+section>.download>div{
+  margin: 15px 15px;
+  background-color: #1dcd00;
+}
+section>.download>div>a{
+  display: block;
+  height: 39px;
+  line-height: 39px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* 섹션-다운로드 끝 */
+
+/* 섹션-라인소개 시작 */
+section>.introduce{}
+section>.introduce>ul{}
+section>.introduce>ul>li{
+  width: 93%;
+  height: 59px;
+  margin-left: 10px;
+  padding: 27px 0px 37px 15px;
+  border-bottom: 1px solid #ccc;
+}
+section>.introduce>ul>li:first-child{
+  border-top: 1px solid #ccc;
+}
+section>.introduce>ul>li:nth-child(3){
+  padding-bottom: 47px;
+}
+section>.introduce>ul>li:last-child{
+  padding-bottom: 47px;
+  border-bottom:none;
+}
+section>.introduce>ul>li>h2{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+section>.introduce>ul>li>span{
+  display: block;
+  font-size: 16px;
+}
+
+
+
+/* 섹션-라인소개 끝 */
+
+/* 섹션 끝 */
+
+
+/* 푸터 시작 */
+footer{
+  color: #727272;
+  background-color: #444;
+}
+footer>.f_mnu{}
+footer>.f_mnu>ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+footer>.f_mnu>ul>li{
+  margin: 10px 0 10px 10px;
+  padding-right: 10px;
+  border-right: 1px solid #727272;
+}
+footer>.f_mnu>ul>li>a{
+  display: block;
+  color: #727272;
+}
+
+footer>address{
+  padding-left: 10px;
+}
+
+footer>.snsbox{
+  margin-top: 20px;
+}
+footer>.snsbox>.sns{
+  float: left;
+  margin-left: 10px;
+}
+footer>.snsbox>.sns>a{
+  text-indent: -9999px;
+}
+footer>.snsbox>.youtube{
+  width: 83px;
+}
+footer>.snsbox>.youtube>a{
+  display: block;
+  height: 33px;
+  background-image: url(../img/spriteSP191016.png);
+  background-position: -1060px 0;
+  background-repeat: no-repeat;
+}
+
+footer>.snsbox>.facebook{
+  width: 18px;
+  margin-left: 30px;
+}
+footer>.snsbox>.facebook>a{
+  display: block;
+  height: 32px;
+  background-image: url(../img/spriteSP191016.png);
+  background-position: -82px 0;
+  background-repeat: no-repeat;
+}
+
+footer>.length{
+  position: relative;
+  left:80%;
+  top: -70px;
+  width: 70px;
+  background-color: #333;
+}
+footer>.length>a{
+  display: block;
+  height: 35px;
+  color: #fff;
+  line-height: 35px;
+  text-indent: 10px;
+}
+footer>.length>a::after{
+  position: absolute;
+  right: 5px;
+  top: 14px;
+  display: block;
+  width: 13px;
+  height: 7px;
+  background-image: url(../img/spriteSP191016.png);
+  background-position: -140px 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+footer>.length>.lengbox{
+  display: none;
+  position: absolute;
+  left: -70px;
+  top: -420px;
+}
+footer>.length>.lengbox>.s_length{}
+footer>.length>.lengbox>.s_length>li{
+  width: 140px;
+  background-color: #fff;
+}
+footer>.length>.lengbox>.s_length>li>a{
+  display: block;
+  height: 15px;
+  padding: 3px 3px;
+}
+footer>.length>.lengbox>.s_length>li:hover>a{
+  background-color: lightskyblue;
+}
+footer>p{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 20px;
+}

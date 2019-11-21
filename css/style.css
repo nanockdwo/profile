@@ -1,0 +1,468 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+#wrap{
+  width: 1200px;
+  font-family: 'Nanum Gothic';
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+}
+
+h3{
+  font-weight: 600;
+}
+/* 헤더시작 */
+header{
+  position: fixed;
+  width: 1200px;
+  height: 150px;
+  background-image: url(../img/header.jpg);
+  z-index: 9999;
+}
+header>.nav{}
+header>.nav>.logo{
+  position: absolute;
+  left: 53px;
+  top: 8px;
+  width: 140px;
+  height: 134px;
+  text-indent: -9999px;
+  background-image: url(../img/profile_nav_logo2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+header>.nav>.title{
+  position: absolute;
+  left: 194px;
+  top: 25px;
+  font-weight: 800;
+}
+header>.nav>.name{
+  position: absolute;
+  right: 32px;
+  top: 25px;
+  font-weight: 800;
+}
+header>.nav>.gnb{
+  position: absolute;
+  top: 69px;
+  left: 278px;
+  width: 1200px;
+}
+header>.nav>.gnb>li{
+  float: left;
+}
+header>.nav>.gnb>li:nth-child(1){
+  width: 127px;
+}
+header>.nav>.gnb>li:nth-child(2){
+  width: 225px;
+}
+header>.nav>.gnb>li:nth-child(3){
+  width: 227px;
+}
+header>.nav>.gnb>li:nth-child(4){
+  width: 127px;
+}
+header>.nav>.gnb>li:nth-child(5){
+  width: 205px;
+}
+header>.nav>.gnb>li>a{
+  display: block;
+  height: 73px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 73px;
+  text-align: center;
+}
+header>.nav>.gnb>li.on>a,
+header>.nav>.gnb>li:hover>a{
+  color: #fff600;
+}
+
+
+/* 헤더끝 */
+
+/* 섹션시작 */
+section{
+  padding-top: 150px;
+}
+section>.container{}
+/* 섹션->메인 시작 */
+section>.container>.main{
+  position: relative;
+  width: 1200px;
+  height: 800px;
+}
+section>.container>.main>.main_pic{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 456px;
+  height: 456px;
+  margin-top: -228px;
+  margin-left: -228px;
+  text-indent: -9999px;
+  background-image: url(../img/profile_main_bird.png);
+}
+section>.container>.main>.main_bg{
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  background-image: url(../img/profile_main_bg.jpg);
+}
+section>.container>.main>.key{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 288px;
+  height: 44px;
+  margin-left: -144px;
+  color: #faacff;
+  line-height: 44px;
+  text-align: center;
+}
+
+/* 섹션->메인 끝 */
+
+/* 섹션->어바웃미 시작 */
+section>.container>.about_me{
+  position: relative;
+  width: 1200px;
+  height: 800px;
+}
+section>.container>.about_me>h3{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+section>.container>.about_me>.my_pic{
+  position: absolute;
+  left: 55px;
+  top: 162px;
+  width: 218px;
+  height: 245px;
+  text-indent: -9999px;
+  background-image: url(../img/mypicture.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+section>.container>.about_me>.profile{
+  position: absolute;
+  left: 419px;
+  top: 128px;
+  width: 783px;
+}
+section>.container>.about_me>.profile>li{
+  height: 46px;
+}
+section>.container>.about_me>.profile>li:nth-child(4){
+  height: 80px;
+}
+section>.container>.about_me>.profile>li:nth-child(4)>p{
+  position: absolute;
+  left: 80px;
+  top: 138px;
+}
+section>.container>.about_me>p{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 950px;
+  margin-left: -475px;
+  color: #fff600;
+  text-align: center;
+}
+
+/* 섹션->어바웃미 끝 */
+
+/* 섹션->포트폴리오 시작 */
+section>.container>.portfolio{
+  width: 1200px;
+  height: 800px;
+}
+section>.container>.portfolio>h3{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+section>.container>.portfolio>.pofol_container{
+  position: relative;
+  width: 100%;
+  height: 628px;
+}
+
+section>.container>.portfolio>.pofol_container>.pofol_gnb{
+  
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li{
+  float: left;
+  width: 25%;
+  background-color: #cfcfff;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+}
+
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:last-child{
+  border-right: 1px solid #000;
+  box-sizing: border-box;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>a{
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  color: #fff600;
+  font-weight: 800;
+  text-align: center;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li.on>a,
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:hover>a{
+  color: #000;
+  background-color: #fff600;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub{
+  display: none;
+  overflow: hidden;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:nth-child(3)>.sub{
+  display: block;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li{
+  
+  position: absolute;
+  left: 610px;
+  width: 551px;
+  height: 100px;
+  background-color: #cfcfff;
+}
+/* section>.container>.portfolio>.pofol_container>.pofol_gnb>li:hover>ol>li{
+  display: block;
+} */
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:nth-child(1){
+  left: 20px;
+  top: 120px;
+  width: 570px;
+  height: 460px;
+  text-indent: -9999px;
+  line-height: 460px;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:nth-child(2){
+  top: 120px;
+  line-height: 100px;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:nth-child(3){
+  top: 240px;
+  line-height: 100px;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:nth-child(4){
+  top: 360px;
+  line-height: 100px;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:nth-child(5){
+  top: 480px;
+  line-height: 100px;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li>a{
+  display: block;
+  color: #fff600;
+  font-weight: 800;
+  text-align: center;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:nth-child(1)>.sub>ol>li:nth-child(1)>a{
+  background-image: url(../img/line.png);
+  background-position: center center;
+  background-size: cover;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:nth-child(2)>.sub>ol>li:nth-child(1)>a{
+  background-color: green;
+  background-position: center center;
+  background-size: cover;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:nth-child(3)>.sub>ol>li:nth-child(1)>a{
+  background-image: url(../img/hanmi.png);
+  background-position: center center;
+  background-size: cover;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li:nth-child(4)>.sub>ol>li:nth-child(1)>a{
+  background-image: url(../img/portfolio_shoppingmall.PNG);
+  background-position: center center;
+  background-size: cover;
+}
+section>.container>.portfolio>.pofol_container>.pofol_gnb>li>.sub>ol>li:hover>a{
+  color: #000;
+  background-color: #fff600;
+}
+
+section>.container>.portfolio>.pofol_container>.psub>.morepage{
+  display: none; 
+  position:fixed;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.6);
+  z-index: 9999;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont{
+  overflow-y:scroll;
+  position: relative;
+  top:5%;
+  left:50%;
+  width:70%;
+  height: 85%;
+  padding-bottom: 50px;
+  color:#000;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont::-webkit-scrollbar { 
+  display: none; 
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>.close{
+  position: absolute;
+  right: 20px;
+  top:20px;
+  width:30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: #fff;
+  background-image: url(../img/close.png);
+  background-size: cover;
+  cursor: pointer;
+  outline:none;
+  border:none;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>p{
+  width:50%;
+  margin:0 auto;
+  margin-top:40px;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>p>img{
+  width:100%;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>p{
+  font-weight: 800;
+  font-size: 13px;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.7;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>p:nth-child(3)+a{
+  display: inline-block;
+  margin-top:50px;
+  padding:10px 30px;
+  font-weight: 800;
+  font-size: 12px;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage01>.more_cont>p:nth-child(3)+a,.morepage01>.more_cont>p>strong{
+  background-color: #e8ce5d;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage03>.more_cont>p:nth-child(3)+a,.morepage01>.more_cont>p>strong{
+  background-color: #e8ce5d;
+}
+
+section>.container>.portfolio>.pofol_container>.psub>.morepage>.more_cont>h3{
+  margin:30px 0;
+  font-size: 30px;
+  text-align: center;
+}
+section>.container>.portfolio>.pofol_container>.psub>.morepage01>.more_cont>h3{
+  color:#e8ce5d;
+}
+
+
+
+/* 섹션->포트폴리오 끝 */
+
+/* 섹션->스킬 시작 */
+section>.container>.skill{
+  width: 1200px;
+  height: 800px;
+}
+section>.container>.skill>h3{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.skill>div{
+  margin-bottom: 40px;
+}
+.skill>div>h3{
+  float:left;
+  width:15%;
+  height:10px;
+  padding-right:8%;
+  color:#fff;
+  font-weight:600;
+  font-size:18px;
+  line-height:10px;
+  text-align:right;
+}
+
+.skill>div>.progress{
+  float:left;
+  position:relative;
+  width:70%;
+  height:10px;
+  background-color:#3a4149;
+  border-radius:3px;
+}
+
+.skill>div>.progress>.bar{
+  height:100%;
+  width:0;/*js에서 동적으로 할당*/
+  background-color:#fff600;
+  transition:all 2s ease-in-out;
+}
+
+
+.skill>div>.progress>.bar>span{
+  position:absolute;
+  top:-20px;
+  right:15px;
+  font-size: 12px;
+}
+
+
+/* 섹션->스킬 끝 */
+
+/* 푸터 시작 */
+
+footer{
+  width: 1200px;
+  height: 800px;
+}
+footer>.contact{
+  height: 800px;
+  background-image: url(../img/bird.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer>.contact>p{
+  margin-top: 100px;
+  line-height: 1.7;
+  text-align: center;
+}
+footer>.contact>h3{
+  padding: 20px;
+  line-height: 0;
+  text-align:left;
+}
+
+/* 푸터 끝 */

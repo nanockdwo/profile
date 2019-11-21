@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* canvas{
+  position: relative;
+  left: 50%;
+  top: 0;
+  margin-left: -250px;
+  border: 1px solid #000;
+} */
+/* canvas>div{
+  display: block;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.unit1{
+  width: 119px;
+  height: 113px;
+}
+.unit2{
+  width: 119px;
+  height: 113px;
+}
+.enemy1{
+  width: 100px;
+  height: 69px;
+}
+.enemy2{
+  width: 50px;
+  height: 63px;
+}
+.miss{
+  width: 15px;
+  height: 10px;
+} */
